@@ -4,7 +4,7 @@
 ## Solution
 The solution works by querying attendance data imported from a csv file.
 
-This is not the best approach to the problem. A better approach will be to make provision for public holidays, mid-term breaks and number of days a staff is surpose to be available in a month as this parameters will take care of every possiblities that might arise.
+This is not the best approach to the problem. A better approach will be to make provision for public holidays, weekends/weekday ,mid-term breaks and number of days a staff is surpose to be available in a month as this parameters will take care of every possiblities that might arise.
 
 
 ## Methods
@@ -21,7 +21,7 @@ This is not the best approach to the problem. A better approach will be to make 
 5. You are up
 
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at dank.uche@yahoo.com. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within Laravel, please send an e-mail to Daniel Uche at dank.uche@yahoo.com. All security vulnerabilities will be promptly addressed.
 
 ## License
 
