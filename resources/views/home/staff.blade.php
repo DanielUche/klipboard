@@ -7,7 +7,7 @@
 		<div class="ibox float-e-margins"> 
 		 <div class="ibox-content">
 		 <div class="row"> 
-			<form name="submitform" method="POST" action="../staff/{{$attendance[0]['id']}}">
+			<form name="submitform" method="POST" action="../staff/{{$id}}">
 			{{ csrf_field()}}
 			<div class = "col-md-8 col-md-offset-2" >
 			<div class = "col-md-8 ">
@@ -32,7 +32,7 @@
 	<div class="col-md-10 col-md-offset-1 computed">
 		<div class="ibox float-e-margins">    
 			<div class="ibox-content">
-			<h3>Displaying Date for <b style="color:#1ab394"> {{$attendance[0]['name']}}</b></h3>
+			<h3>Displaying Date for <b style="color:#1ab394"> {{ $attendance ? $attendance[0]['name'] : ""}}</b></h3>
 				<table class ="table table-bordered">
 					<tr>
 						<th>SN</th>

@@ -53,7 +53,7 @@
         </div>
         <div class="navbar-collapse collapse" id="navbar" ng-controller = "HomeCtrl">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="upload-attandance" >Upload Attendance</a></li> 
+                <li><a href="{{ URL('upload-attandance') }}" >Upload Attendance</a></li> 
 
             </ul>
         </div>

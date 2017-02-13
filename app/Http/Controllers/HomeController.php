@@ -51,7 +51,7 @@ class HomeController extends Controller {
 	}
 
 
-	public function staff(Request $request, $staffName){
+	public function staff(Request $request, $staffName =null){
 		$date = date("Y");
 		$attendance = null;
 		if($request->isMethod('post')){
@@ -60,7 +60,7 @@ class HomeController extends Controller {
 			$attendance = Attendance::overViewAllStaffYearMonth($date, $staffName);
 		}
 	
-		return View('home.staff')->with('attendance', $attendance);
+		return View('home.staff')->with(['attendance'=> $attendance,'id'=>$staffName ? $staffName : ""]);
 	}
 }
 
